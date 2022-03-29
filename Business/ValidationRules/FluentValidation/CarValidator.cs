@@ -14,7 +14,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.ModelName).NotEmpty();
             RuleFor(p => p.ModelYear).NotEmpty();
             RuleFor(p => p.DailyPrice).GreaterThan(0);
-            RuleFor(p => p.DailyPrice).GreaterThanOrEqualTo(100).When(p => p.BrandId == 6);
+            RuleFor(p => p.DailyPrice).GreaterThanOrEqualTo(300).When(p => p.BrandId == 6);
             //RuleFor(p => p.ModelName).Must(StartWithA).WithMessage("Ürünler A harfi ile başlamalı");
         }
 
